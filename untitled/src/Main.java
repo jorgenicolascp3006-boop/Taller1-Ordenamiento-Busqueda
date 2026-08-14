@@ -5,7 +5,7 @@ public class Main {
         int [] skibidiArray = {70,12,19,45,11,33,26};
         MisAlgoritmos misalgoritmos = new MisAlgoritmos();
 
-        System.out.println(misalgoritmos.linearSearch(skibidiArray,12));
+        System.out.println(misalgoritmos.binarySearch(skibidiArray,12));
 
     }
 
