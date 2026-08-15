@@ -16,13 +16,14 @@ public class MisAlgoritmos  implements Busquedas,Ordenamientos{
     public int binarySearch(int[] arrayPorExplorar, int elementoABuscar) {
         int izq=0;
         int der=arrayPorExplorar.length-1;
-        while (izq<=der){
+        while ((izq)<=(der)){
             int mid = (izq+der)/2;
             if (arrayPorExplorar[mid]==elementoABuscar) {
                 return mid;
             }
             if(arrayPorExplorar[mid]<elementoABuscar){
                 izq=mid+1;
+
             }
             else{
                 der=mid-1;
@@ -32,11 +33,25 @@ public class MisAlgoritmos  implements Busquedas,Ordenamientos{
 
 
 
+
     }
 
     @Override
-    public int[] bubbleSort(int[] arrayDesordenado) {
-        return new int[0];
+    public int[] bubbleSort(int[] arrayDesordenado){
+        int n=arrayDesordenado.length;
+        for (int i=0;i<=n-1;i++)
+            for (int j = 0; j < n - i - 1; j++) {
+                if (arrayDesordenado[j]>arrayDesordenado[j+1]) {
+                    int temp = arrayDesordenado[j];
+                    arrayDesordenado[j]=arrayDesordenado[j+1];
+                    arrayDesordenado[j+1]=temp;
+                }
+
+
+            }
+        return arrayDesordenado;
+
+
     }
 
     @Override
