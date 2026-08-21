@@ -10,8 +10,8 @@ public class Main {
         //int [] skibidiArray = {11,12,19,26,33,45,70};
         MisAlgoritmos misalgoritmos = new MisAlgoritmos();
 
-        System.out.println(Arrays.toString(misalgoritmos.bubbleSort(skibidiArray)));
-
+        //System.out.println(Arrays.toString(misalgoritmos.selectionSort(skibidiArray)));
+        System.out.println(Arrays.toString(misalgoritmos.selectionSort(skibidiArray)));
 
     }
 
