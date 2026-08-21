@@ -11,7 +11,7 @@ public class Main {
         MisAlgoritmos misalgoritmos = new MisAlgoritmos();
 
         //System.out.println(Arrays.toString(misalgoritmos.selectionSort(skibidiArray)));
-        System.out.println(Arrays.toString(misalgoritmos.selectionSort(skibidiArray)));
+        System.out.println(Arrays.toString(misalgoritmos.insertionSort(skibidiArray)));
 
     }
 
